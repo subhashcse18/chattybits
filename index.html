@@ -4,6 +4,7 @@
   <title>Chatty Bits</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="controler.js"></script>
 </head>
 <body>
   <header>
@@ -14,16 +15,19 @@
     <div class="row">
       <div class="column">
       <div id="inputMenu"> 
-        <button>Clear</button>
-        <button>Run</button>
+        <button onclick="clearTextbox()" >Clear</button>
+        <button onclick="run()">Run</button>
       </div>
-      <div> <p> head</p>
+      <div id="inputfiled"> <textarea type="text" id="inputarea"> </textarea>
       </div>
-
       </div>
       <div class="column">
-        <h2>Column 2</h2>
-        <p>Some text..</p>
+        <div id="outputMenu"> 
+          <span> Output </span>
+        </div>
+        <div id="outputfiled"> <textarea type="text" value="" id="outputtext"></textarea>
+        </div>
+      </div>
       </div>
     </div>
   </main>
