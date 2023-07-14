@@ -35,6 +35,7 @@ await fetch(url, {
 };
 
 let setOutput = document.getElementById("outputtext");
-setOutput.value = getData(url);
+setOutput.value = getData(url).then(data => {
+    JSON.stringify(data)});
 
   }
